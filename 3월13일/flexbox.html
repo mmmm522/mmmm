@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>container / item></title>
+
+<head>
+
+    <style>
+        .item:nth-child(1) {
+            background-color: rgb(255, 0, 221);
+            font-size: 20px;
+            flex: 1;
+
+
+        }
+
+        .item:nth-child(2) {
+            width: 100px;
+            background-color: royalblue;
+            font-size: 15px;
+            flex: 2;
+
+
+
+
+        }
+
+        .item:nth-child(3) {
+            width: 200px;
+            background-color: seagreen;
+            font-size: 5px;
+        }
+
+        /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+
+        .container {
+            flex-direction: row;
+            /*방향*/
+            display: flex;
+            height: 200px;
+            background-color: salmon;
+            align-items: row;
+            justify-content: space-around;
+
+        }
+
+        .inner-container {
+
+            display: flex;
+            flex-direction: column;
+
+
+
+        }
+
+        .inner-container div {
+
+            flex: 1;
+
+        }
+
+        .inner-container div:nth-child(3) {
+            background-color: tomato;
+
+            
+        }
+
+        .inner-container div:nth-child(2) {
+            background-color: yellow;
+            
+        }
+
+        .inner-container div:nth-child(1) {
+            background-color: red;
+           
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Lorem.</div>
+        <div class="item">Eius.</div>
+        <div class="item inner-container">
+            <div>Lorem.</div>
+            <div>Fugiat?</div>
+            <div>Eaque.</div>
+        </div>
+    </div>
+    <div class="normal">Lorem ipsum dolor sit amet consectetur.</div>
+
+</body>
+
+</html>

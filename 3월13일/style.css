@@ -1,0 +1,35 @@
+.container {
+    background-color: skyblue;
+    display: flex;
+}
+
+.menu {
+    border: 5px solid pink;
+    padding: 10px;
+    color: black;
+
+}
+
+.menu:hover {
+    color: red
+}
+
+.dummy {
+    flex: 1;
+}
+
+.sup {
+    background-color: skyblue;
+    margin-right: 20px;
+    color: darkorchid;
+    padding: 30px;
+    margin-right: 10px;
+
+}
+.main-container{
+flex: 1;
+    display: flex;
+}
+.sup:hover{
+    color: teal;
+}

@@ -1,0 +1,41 @@
+
+.container {
+    display: flex;
+    background-color: skyblue;
+
+}
+
+.menu:hover {
+    color: rgb(62, 137, 187);
+}
+
+.menu {
+    padding: 10px;
+    color: black;
+
+
+}
+
+.dummy {
+    flex: 1;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+   
+}
+.side-bar{
+    background-color: rgba(110, 149, 223, 0.651);
+    margin-right: 10px;
+    color: darkorchid
+    ;
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+.side-bar:hover{
+    color:white;
+
+}
+
