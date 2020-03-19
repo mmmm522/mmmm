@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+
+        <!-- input:text#input$.form-control*2-->
+        <input type="text" name="" id="input1" class="form-control">
+        <input type="text" name="" id="input2" class="form-control">
+        <butoon class="btn btn-danger" id="button " onclick="plus()">+</butoon>
+        <div id="result"></div>
+    </div>
+    <script>
+        function plus() {
+
+            //두개의 input요소 갑을얻어와서//
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+
+            console.log(num1, num2);
+            console.log(Number(num1), Number(num2));
+
+            //더해서//
+            //var r = num1 +num2 ;//
+
+            var r = Number(num1) + Number(num2);
+
+            //NaN-> 나숫자아니다//
+
+
+            //result요소 입력//
+            document.getElementById("result").innerHTML = r;
+
+            //number ->string//
+
+            var a = 3;
+            var b = " " + a; //바꿀라면 빈거넣기//
+            console.log('b의타입', typeof b);
+
+            //string -> number//
+            var c = "3";
+            var d = Number(c);
+            console.log('d의타입', typeof d);
+
+           
+           
+            var e =" 3.14 ";
+            var f = "parseInt(e)";//소수점불가//
+            var g ="parseFloat(e)";//소수점가능//
+            console.log("parseInt, f");
+            console.log("parseFloat, g");
+
+            var h  = +e; //number타입으러 바꿔서 나옴//
+            console.log("+",h);
+            console.log("typeof h",typeof h);
+            
+            
+            
+            
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
