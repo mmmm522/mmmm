@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+    </form>
+    <p id="para1" class="mypara">234</p>
+    <p id="para2" class="mypara">555</p>
+    <p id="para3">Nihil?</p>
+
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+
+    <script>
+        var para1 = document.getElementById("para1");
+        console.log(para1);
+        
+        var paras = document.getElementsByTagName("p");
+        console.log(paras[1]);
+
+        var para2 = document.getElementsByClassName("mypara");
+        console.log(paras[0]);
+
+        var forms =document.forms;
+        console.log(forms[0]);
+
+        var impages = document.images;
+        console.log(images[1]);
+        
+        var para3 = document.querySelector("#para3");//한개부르기
+        console.log(para3);
+
+        var paras2 = document.querySelectorAll(".mypara");//여러개부르기
+        console.log(para2[0]);
+        
+        
+        
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>

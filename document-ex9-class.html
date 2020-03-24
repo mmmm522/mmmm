@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color:white;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <button onclick="addclass()" >클래스추가</button>
+    <button onclick="removeclass()" >클래스제거</button>
+    <button onclick="toggleclass()" >토글</button>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+
+    <script>
+
+  function toggleclass(){
+
+            document.getElementById("head1").classList.toggle("dark");
+        }
+
+        function addclass(){
+
+            document.getElementById("head1").classList.add("dark");
+        }
+
+        function removeclass(){
+
+            document.getElementById("head1").classList.remove("dark");
+        }
+
+        
+    </script>
+
+</body>
+</html>

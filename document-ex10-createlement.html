@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function addElement(){
+        var newElem = document.createElement("p");
+        newElem.innerHTML= "새로운 요소" +parseInt(Math.random()*100+1);
+       /// document.getElementById("result").prepend(newElem);//위로추가 
+        document.getElementById("result").appendChild(newElem)//밑으로추가
+
+
+
+    }
+</script>
+</head>
+<body>
+    <button onclick="addElement()" >추가</button>
+    <div id="result"></div>
+    
+</body>
+</html>

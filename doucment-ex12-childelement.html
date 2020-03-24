@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>Lorem, ipsum.</p>
+        <p>Vero, molestias.</p>
+        <p>Soluta, ex.</p>
+    </div>
+
+    <script>
+       var con = document.getElementById("container");
+       var ch = con.children;
+       console.log(ch[0]);
+       console.log(ch[1]);
+       console.log(ch[2]);
+
+       console.log(con.firstElementChild);//첫번재
+       console.log(con.lastElementChild);//마지막
+
+       console.log(ch[1].nextElementSibling);//형제찾기
+       console.log(ch[1].previousElementSibling);
+
+       console.log(ch[1].parentElement);//부모찾기
+       console.log(ch[2].parentElement);
+
+       //부모나 형제 자식을찾는 그런거 children
+       
+       
+       
+       
+       
+       
+    </script>
+</body>
+</html>
