@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("p").hide();
+
+            $("#btn1").click(function () {
+                $("p").hide();
+                $("#btn1+p").show();
+            })
+            $("#btn2").click(function () {
+                $("p").hide();
+                $("#btn2+p").show();
+            })
+            $("#btn3").click(function () {
+                $("p").hide();
+                $("#btn3+p").show();
+            });
+//일단다숨겻다 클릭하면 클릭한게 보이게끔하는 그런거 
+
+        });
+    </script>
+    <div class='container'>
+  <!-- (button#btn$.btn.btn-block.btn.btn-danger+p>lorem)*3-->
+        <button id="btn1" class="btn btn-block btn-danger">일번</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique sapiente explicabo
+            praesentium unde distinctio possimus doloribus quasi et eveniet quos consequatur dolorem, voluptate laborum
+            repudiandae? Inventore velit eum cum.</p>
+        <button id="btn2" class="btn btn-block btn-danger">이번</button>
+        <p>Voluptates dicta modi corrupti dolor quasi unde vel odio animi, facere laborum magnam quae sit tempore aut
+            deserunt porro incidunt temporibus, alias, quidem quo odit pariatur ipsam. Et, nemo natus.</p>
+        <button id="btn3" class="btn btn-block btn-danger">삼번</button>
+        <p>Dolores maxime id nemo delectus corrupti! Voluptatum ex blanditiis, officia reiciendis, voluptatem, eos natus
+            distinctio dolorum doloremque quas nesciunt placeat exercitationem expedita explicabo id harum atque quidem
+            nam voluptates quod.</p>
+    </div>
+</head>
+
+<body>
+</body>
+
+</html>

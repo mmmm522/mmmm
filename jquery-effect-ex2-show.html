@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#effect").hide();
+        });
+        $("#btn2").click(function(){
+            $("#effect").show("fast"); //slow&fast
+        });
+
+        $("#btn3").click(function(){
+            $("#effect").toggle();//show & hide 둘중 하나나오게끔 적용
+        });
+    
+    });
+    </script>
+    <div class='container'>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-block btn-danger" id="btn1">숨어</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-info" id="btn2">괜찬아나와</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button id="btn3" class="btn btn-primary btn-block">토글</button></div>
+        </div>
+        <div class="row" id="effect">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, nobis id rerum neque repellendus illum corporis obcaecati veritatis molestias esse. Laboriosam distinctio nisi ab, quae voluptatem perspiciatis cum totam quis.</p>
+        </div>
+    </div>
+</head>
+<body>
+</body>
+</html>

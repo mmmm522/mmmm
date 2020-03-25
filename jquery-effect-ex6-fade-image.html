@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <title>Document</title>
+
+    <style>
+        #small-imge1{
+            width: 350px;
+        }
+        #big-imge1{
+            width: 100%;
+            display: none;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $("#small-imge1").click(function(){
+                $("#big-imge1").fadeIn();
+            });
+
+            $("#big-imge1").click(function(){
+                $(this).fadeOut(); //this를 쓰면 자기자신을 지정? 요튼사라지게함
+            });
+
+        });
+    </script>
+</head>
+<body>
+<img id= "small-imge1"src="../bootstrap4-ex1/아이언맨.jpg" alt="">
+<img id="big-imge1"src="../bootstrap4-ex1/아이언맨.jpg" alt="">
+
+    
+</body>
+</html>
