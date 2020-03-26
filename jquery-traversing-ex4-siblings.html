@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    body{
+        background-color: skyblue;
+    }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#myHeading").siblings().css("font-size","50px");
+        $("#myHeading").next().css("color","blue");//넥스트의 기준은 왼쪽부터 왼쪽부터 작성한대
+        $("#myHeading").nextAll().css("border-left","2px solid red");//모두
+        $("#myHeading").nextUntil(".until").css("font-family","monospace");
+        $("#myHeading").prev().css("color","green");
+        $("#myHeading").prevAll().css("border-bottom","2px solid yellow");
+        $("#myHeading").prevUntil(".Until").css("font-size","30px","color","skyblue");
+    
+    });
+    </script>
+    <div class='container'>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1 class="until">Numquam, dignissimos perspiciatis!</h1>
+        <h1>Ipsam, excepturi natus.</h1>
+        <h1>Autem, dolores officia.</h1>
+        <h1 id="myHeading">Voluptates, quae repellendus.</h1>
+        <h1>Natus, aliquam ut.</h1>
+        <h1>Distinctio, ex optio.</h1>
+        <h1>Quae, nisi corrupti.</h1>
+        <h1 class="until">Autem, harum omnis!</h1>
+        <h1>Perspiciatis, eos maxime.</h1>
+    </div>
+</head>
+<body>
+</body>
+</html>

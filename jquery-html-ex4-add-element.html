@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                var p1 = $("<p></p>");//dom에 붙지안는 새로운 엘리멘트 생성
+                p1.text("append로붙일 new element");
+                $("#result").append(p1);//종료테크 바로앞에
+            });
+
+            $("#btn2").click(function () {
+                var p2 = $("<p></p>");//$("<p/>)")이렇게도 쓸수잇음
+                p2.text("prepend로 붙일 new element");
+                $("#result").prepend(p2);
+            });
+            $("#btn3").click(function () {
+                var p3 = $("<p />");
+                p3.text("before로 붙이는 new element");//형제로 들어감
+                $("#result").prepend(p3);
+            });
+            $("#btn4").click(function () {
+                var p4 = $("<p />");
+                p4.text("after로 붙이는 new element");
+                $("#result").prepend(p4);
+
+            });
+        });
+    </script>
+    <div class='container'>
+        <button class="btn btn-danger" id="btn1">append</button>
+        <button class="btn btn-info" id="btn2">prepend</button>
+        <button class="btn btn-primary" id="btn3">brfore</button>
+        <button class="btn btn-warning" id="btn4">after</button>
+        <div id="result"></div>
+    </div>
+</head>
+
+<body>
+</body>
+
+</html>

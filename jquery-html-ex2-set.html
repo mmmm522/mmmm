@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+       
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#para1").text("hello javascript");
+            $("#para2").text("hello javasctiprt");
+            $("#para3").html("hello <strong>javasctiprt</strong>");
+       
+            $("#input1").val("hello javascript");//검색창?에 입력갑이?나오게
+
+            $("img").attr("src","../bootstrap4-ex1/토르.jpg");
+        });
+    
+    });
+    </script>
+    <div class='container'>
+        <button class="btn btn-danger" id="btn1">갑변경</button>
+        <p id="para1">1</p>
+        <p id="para2">2</p>
+        <p id="para3">3</p>
+        <input type="text" id="input1" class="form-control">
+        <img src="../bootstrap4-ex1/아이언맨.jpg" alt="">
+        <br>
+    </div>
+</head>
+<body>
+</body>
+</html>

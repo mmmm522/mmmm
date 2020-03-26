@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#papa1").click(function(){
+            var papa1 = $("<li /> ");
+                papa1.text("3423");
+                papa1.click(function(){
+                    $(this).remove();
+                });
+                $("#result").append(papa1);
+       // });
+       // $("#papa2").click(function(){
+       //     var papa2 = $("<li /> ");
+       //         papa2.text();
+       //         $("#result").remove(papa2);
+        });
+    
+    });
+    </script>
+    <div class='container'>
+        <button id="papa1" class="btn btn-danger btn-block my-1" >Lorem.</button>
+        <button id="papa2" class="btn btn-danger btn-block my-10" >Lorem.</button>
+        <button id="papa3" class="btn btn-danger btn-block my-1" >Lorem.</button>
+        <div id="result"></div>
+    </div>
+</head>
+<body>
+</body>
+</html>

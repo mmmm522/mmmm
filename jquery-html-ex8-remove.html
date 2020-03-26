@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+   $(document).ready(function () {
+            $("button").click(function () {
+                var text = $(this).text();
+                var li = $("<li />");
+                li.text(text);
+                li.click(function(){
+                    $(this).remove();//리스트를 누르면 삭제가능 .../
+                });
+                $("#result").append(li);
+            });
+
+
+        });
+    </script>
+    <div class='container'><!--- my-3 마진주는거 -->
+        
+        <button class="btn btn-outline-danger btn-block my-3">Lorem.</button>
+        <button class="btn btn-outline-danger btn-block my-3">Repellendus!</button>
+        <button class="btn btn-outline-danger btn-block my-3">Est.</button>
+        <button class="btn btn-outline-danger btn-block my-3">Modi.</button>
+        <button class="btn btn-outline-danger btn-block my-3">Deserunt.</button>
+        <button class="btn btn-outline-danger btn-block my-3">Nemo?</button>
+
+        <ul id="result"></ul>
+    </div>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("h1").first().css("color", "yellow");//문서에나온순서대로 1번 여ㅛ지업음
+            $("h1").last().css("color", "red");
+            $("h1").eq(5).css("color", "blue");
+
+            $("h1").filter(".myhead").css("color", "gold");
+            // $("h1.myhead").css("color","gold"); 위에꺼랑 동일
+
+            $("h1").not(".myhead").css("text-decoretion", "underline");//선택자에 해당하지안는놈
+        });
+     
+
+     //jquery는 버전이 많이나와서 버전확인후 작성
+    </script>
+    <div class='container'>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Quidem, neque numquam.</h1>
+        <h1 class="myhead">Autem, quae tempore!</h1>
+        <h1 class="myhead">Unde, in amet?</h1>
+        <h1>Eum, acc class="myhead"usantium assumenda!</h1>
+        <h1>Explicabo, quod repellat?</h1>
+        <h1>Velit, dolor possimus?</h1>
+        <h1>Aspernatur, molestiae tenetur.</h1>
+        <h1>Ea, magni facilis.</h1>
+        <h1>Optio, ducimus impedit.</h1>
+    </div>
+</head>
+
+<body>
+</body>
+
+</html>
